@@ -49,4 +49,26 @@
     "setup": "Standard",
     "contact": "South Broadway Cultural Center - (505) 848-1320"
   }
+][
+  {
+    "city": "Albuquerque",
+    "type": "Library",
+    ...
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Event Space",
+    ...
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Hotel Meeting Room",
+    "size": "60+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Embassy Suites Albuquerque - (505) 245-7100"
+  }
 ]
+

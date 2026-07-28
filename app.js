@@ -84,10 +84,86 @@ function generateTable(results) {
   output.appendChild(disclaimer);
 }
 
+let currentIndex = 0;
+let currentResults = [];
+
+function generateTable(results, startIndex = 0) {
+  const output = document.getElementById('output');
+  output.innerHTML = '';
+
+  if (results.length === 0) {
+    output.innerHTML = '<p>No venues found. Try adjusting filters.</p>';
+    return;
+  }
+
+  // Title and timestamp
+  const title = document.createElement('h2');
+  title.textContent = 'Venue Finder Results';
+  const timestamp = document.createElement('p');
+  const now = new Date();
+  timestamp.textContent = `Generated ${now.toLocaleString('en-US', { timeZone: 'America/Denver' })} (MST)`;
+
+  // Table
+  const table = document.createElement('table');
+  table.classList.add('results-table');
+  table.innerHTML = `
+    <tr>
+      <th>Cost</th>
+      <th>Size</th>
+      <th>Tech</th>
+      <th>Access</th>
+      <th>Type</th>
+      <th>Setup</th>
+      <th>Contact</th>
+    </tr>
+  `;
+
+  const slice = results.slice(startIndex, startIndex + 5);
+  slice.forEach(v => {
+    const row = document.createElement('tr');
+    row.innerHTML = `
+      <td>${v.cost || 'Not listed'}</td>
+      <td>${v.size || 'Not listed'}</td>
+      <td>${v.tech || 'Not listed'}</td>
+      <td>${v.access || 'Not listed'}</td>
+      <td>${v.type || 'Not listed'}</td>
+      <td>${v.setup || 'Not listed'}</td>
+      <td>${v.contact || 'Not listed'}</td>
+    `;
+    table.appendChild(row);
+  });
+
+  // Disclaimer
+  const disclaimer = document.createElement('p');
+  disclaimer.textContent = 'Results are for volunteer planning purposes only. Verify details before scheduling.';
+
+  // Next Five button
+  const nextButton = document.createElement('button');
+  nextButton.textContent = 'Next Five';
+  nextButton.style.marginTop = '15px';
+  nextButton.addEventListener('click', () => {
+    currentIndex += 5;
+    if (currentIndex < currentResults.length) {
+      generateTable(currentResults, currentIndex);
+    } else {
+      output.innerHTML = '<p>End of results.</p>';
+    }
+  });
+
+  // Append everything
+  output.appendChild(title);
+  output.appendChild(timestamp);
+  output.appendChild(table);
+  output.appendChild(disclaimer);
+  if (results.length > 5) output.appendChild(nextButton);
+}
+
 // Main click handler
 document.getElementById('generate').addEventListener('click', async () => {
   const data = await loadVenues();
-  const results = filterVenues(data);
-  generateTable(results);
+  currentResults = filterVenues(data);
+  currentIndex = 0;
+  generateTable(currentResults, currentIndex);
 });
+
 

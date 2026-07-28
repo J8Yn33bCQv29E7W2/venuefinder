@@ -37,7 +37,16 @@ function generateTable(results) {
     return;
   }
 
+  // Title and timestamp
+  const title = document.createElement('h2');
+  title.textContent = 'Venue Finder Results';
+  const timestamp = document.createElement('p');
+  const now = new Date();
+  timestamp.textContent = `Generated ${now.toLocaleString('en-US', { timeZone: 'America/Denver' })} (MST)`;
+
+  // Table
   const table = document.createElement('table');
+  table.classList.add('results-table');
   table.innerHTML = `
     <tr>
       <th>Cost</th>
@@ -64,7 +73,15 @@ function generateTable(results) {
     table.appendChild(row);
   });
 
+  // Disclaimer
+  const disclaimer = document.createElement('p');
+  disclaimer.textContent = 'Results are for volunteer planning purposes only. Verify details before scheduling.';
+
+  // Append everything
+  output.appendChild(title);
+  output.appendChild(timestamp);
   output.appendChild(table);
+  output.appendChild(disclaimer);
 }
 
 // Main click handler

@@ -1,1 +1,53 @@
+[
+  {
+    "city": "Albuquerque",
+    "type": "Library",
+    "size": "40+",
+    "cost": "Free",
+    "tech": "WiFi",
+    "access": "ADA",
+    "setup": "Easy",
+    "contact": "Main Library — (505) 768‑5141"
+  },
+  {
+    "city": "Santa Fe",
+    "type": "Community Center",
+    "size": "60+",
+    "cost": "Under $100",
+    "tech": "Projector",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Genoveva Chavez Center — (505) 955‑4000"
+  },
+  {
+    "city": "Taos",
+    "type": "Event Space",
+    "size": "100+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Both",
+    "setup": "Limited",
+    "contact": "Taos Center for the Arts — (575) 758‑2052"
+  },
+  {
+    "city": "Silver City",
+    "type": "Community Center",
+    "size": "40+",
+    "cost": "Under $50",
+    "tech": "WiFi",
+    "access": "ADA",
+    "setup": "Easy",
+    "contact": "Silver City Recreation Center — (575) 388‑3087"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Event Space",
+    "size": "60+",
+    "cost": "Under $100",
+    "tech": "Projector",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "South Broadway Cultural Center — (505) 848‑1320"
+  }
+]
 

@@ -1,9 +1,10 @@
 /* GLOBAL PAGE STYLING */
 body {
+body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #d0e4ff, #fff7dd);
+  background: linear-gradient(to right, #eef5ff, #fffdf3);
   color: #222;
 }
 

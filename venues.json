@@ -374,5 +374,86 @@
     "access": "Parking",
     "setup": "Standard",
     "contact": "Holiday Inn Roswell - (575) 208-0170"
+  },
+
+  {
+    "city": "Los Lunas",
+    "type": "Library",
+    "size": "30+",
+    "cost": "Free",
+    "tech": "WiFi",
+    "access": "ADA",
+    "setup": "Easy",
+    "contact": "Los Lunas Public Library - (505) 839-3850"
+  },
+  {
+    "city": "Los Lunas",
+    "type": "Community Center",
+    "size": "80+",
+    "cost": "Under $100",
+    "tech": "WiFi",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Daniel Fernandez Recreation Center - (505) 352-7661"
+  },
+  {
+    "city": "Los Lunas",
+    "type": "Community Center",
+    "size": "40+",
+    "cost": "Under $100",
+    "tech": "WiFi",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Los Lunas Transportation Center Community Room - (505) 352-7611"
+  },
+  {
+    "city": "Los Lunas",
+    "type": "Event Space",
+    "size": "120+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Los Lunas Event Center - (505) 352-7661"
+  },
+  {
+    "city": "Los Lunas",
+    "type": "Hotel Meeting Room",
+    "size": "80+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Western Skies Inn & Suites - (505) 865-5100"
+  },
+  {
+    "city": "Bosque Farms",
+    "type": "Community Center",
+    "size": "60+",
+    "cost": "Under $100",
+    "tech": "WiFi",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Bosque Farms Community Center - (505) 869-2357"
+  },
+  {
+    "city": "Belen",
+    "type": "Library",
+    "size": "30+",
+    "cost": "Free",
+    "tech": "WiFi",
+    "access": "ADA",
+    "setup": "Easy",
+    "contact": "Belen Public Library - (505) 966-2567"
+  },
+  {
+    "city": "Belen",
+    "type": "Community Center",
+    "size": "70+",
+    "cost": "Under $100",
+    "tech": "WiFi",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Belen Community Center - (505) 966-2700"
   }
 ]

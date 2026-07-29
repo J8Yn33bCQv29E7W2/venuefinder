@@ -455,5 +455,44 @@
     "access": "Parking",
     "setup": "Standard",
     "contact": "Belen Community Center - (505) 966-2700"
-  }
-]
+  },
+
+  {
+    "city": "Los Alamos",
+    "type": "Library",
+    "size": "40+",
+    "cost": "Free",
+    "tech": "WiFi",
+    "access": "ADA",
+    "setup": "Easy",
+    "contact": "Mesa Public Library - (505) 662-8240"
+  },
+  {
+    "city": "Los Alamos",
+    "type": "Library",
+    "size": "30+",
+    "cost": "Free",
+    "tech": "WiFi",
+    "access": "ADA",
+    "setup": "Easy",
+    "contact": "Los Alamos Public Library - (505) 662-8250"
+  },
+  {
+    "city": "Los Alamos",
+    "type": "Community Center",
+    "size": "50+",
+    "cost": "Under $100",
+    "tech": "WiFi",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Los Alamos Nature Center - (505) 662-0460"
+  },
+  {
+    "city": "Los Alamos",
+    "type": "Event Space",
+    "size": "120+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Fuller Lodge - (505) 662-833

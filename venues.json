@@ -333,5 +333,46 @@
     "access": "Parking",
     "setup": "Limited",
     "contact": "Pinos Altos Community Hall - (575) 388-1509"
+  },
+
+  {
+    "city": "Roswell",
+    "type": "Library",
+    "size": "40+",
+    "cost": "Free",
+    "tech": "WiFi",
+    "access": "ADA",
+    "setup": "Easy",
+    "contact": "Roswell Public Library - (575) 622-7101"
+  },
+  {
+    "city": "Roswell",
+    "type": "Community Center",
+    "size": "80+",
+    "cost": "Under $100",
+    "tech": "WiFi",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Roswell Adult & Senior Center - (575) 624-6718"
+  },
+  {
+    "city": "Roswell",
+    "type": "Event Space",
+    "size": "120+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Roswell Convention & Civic Center - (575) 624-6860"
+  },
+  {
+    "city": "Roswell",
+    "type": "Hotel Meeting Room",
+    "size": "100+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Holiday Inn Roswell - (575) 208-0170"
   }
 ]

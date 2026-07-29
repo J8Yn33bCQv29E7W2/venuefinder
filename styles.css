@@ -59,27 +59,27 @@ button {
   width: 100%;
   padding: 12px;
   margin-top: 20px;
-  background-color: #4a6fa5;        /* soft modern blue */
+  background-color: #3a4f6b;        /* deeper modern blue */
   color: white;
   border: none;
-  border-radius: 6px;               /* modern rounded corners */
+  border-radius: 8px;               /* slightly more modern */
   font-size: 1em;
   cursor: pointer;
   transition: background-color 0.2s ease,
               transform 0.15s ease,
               box-shadow 0.2s ease;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.12); /* subtle depth */
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15); /* stronger depth */
 }
 
 button:hover {
-  background-color: #3d5f8c;        /* slightly darker hover */
-  transform: translateY(-1px);      /* gentle lift */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.18);
+  background-color: #2f435a;        /* darker hover */
+  transform: translateY(-2px);      /* more noticeable lift */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.22);
 }
 
 button:active {
-  transform: translateY(0);         /* tap feel */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.12);
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
 }
 
 /* RESULTS OUTPUT PANEL */

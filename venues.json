@@ -173,6 +173,67 @@
   },
 
   {
+    "city": "Las Cruces",
+    "type": "Library",
+    "size": "40+",
+    "cost": "Free",
+    "tech": "WiFi",
+    "access": "ADA",
+    "setup": "Easy",
+    "contact": "Thomas Branigan Memorial Library - (575) 528-4000"
+  },
+  {
+    "city": "Las Cruces",
+    "type": "Community Center",
+    "size": "60+",
+    "cost": "Under $100",
+    "tech": "WiFi",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Frank O'Brien Papen Community Center - (575) 541-2550"
+  },
+  {
+    "city": "Las Cruces",
+    "type": "Event Space",
+    "size": "120+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Las Cruces Convention Center - (575) 526-0100"
+  },
+  {
+    "city": "Las Cruces",
+    "type": "Hotel Meeting Room",
+    "size": "100+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Hotel Encanto de Las Cruces - (575) 522-4300"
+  },
+  {
+    "city": "Mesilla",
+    "type": "Event Space",
+    "size": "80+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Mesilla Community Center - (575) 524-3262"
+  },
+  {
+    "city": "University Park",
+    "type": "Community Center",
+    "size": "50+",
+    "cost": "Under $100",
+    "tech": "WiFi",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "NMSU Corbett Center Student Union - (575) 646-4411"
+  },
+
+  {
     "city": "Taos",
     "type": "Event Space",
     "size": "100+",

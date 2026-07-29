@@ -18,7 +18,8 @@ h1 {
 }
 
 .filter-panel {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(2px);
   border: 1px solid #ccc;
   border-radius: 6px;
   padding: 20px;
@@ -27,6 +28,18 @@ h1 {
   max-width: 600px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
+#output {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(2px);
+  border-radius: 6px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
 
 .filter-panel h2, .filter-panel h3 {
   text-align: center;

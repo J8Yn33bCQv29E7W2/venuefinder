@@ -10,6 +10,66 @@
     "contact": "Main Library - (505) 768-5141"
   },
   {
+    "city": "Albuquerque",
+    "type": "Library",
+    "size": "30+",
+    "cost": "Free",
+    "tech": "WiFi",
+    "access": "ADA",
+    "setup": "Easy",
+    "contact": "Erna Fergusson Library - (505) 888-8100"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Community Center",
+    "size": "80+",
+    "cost": "Under $100",
+    "tech": "WiFi",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "North Domingo Baca Multigenerational Center - (505) 764-6475"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Community Center",
+    "size": "60+",
+    "cost": "Under $100",
+    "tech": "WiFi",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Manzano Mesa Multigenerational Center - (505) 275-8731"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Event Space",
+    "size": "100+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "National Hispanic Cultural Center - (505) 246-2261"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Hotel Meeting Room",
+    "size": "80+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Embassy Suites Albuquerque - (505) 245-7100"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Hotel Meeting Room",
+    "size": "120+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Marriott Pyramid North - (505) 821-3333"
+  },
+  {
     "city": "Santa Fe",
     "type": "Community Center",
     "size": "60+",
@@ -38,25 +98,5 @@
     "access": "ADA",
     "setup": "Easy",
     "contact": "Silver City Recreation Center - (575) 388-3087"
-  },
-  {
-    "city": "Albuquerque",
-    "type": "Event Space",
-    "size": "60+",
-    "cost": "Under $100",
-    "tech": "Projector",
-    "access": "Parking",
-    "setup": "Standard",
-    "contact": "South Broadway Cultural Center - (505) 848-1320"
-  },
-  {
-    "city": "Albuquerque",
-    "type": "Hotel Meeting Room",
-    "size": "60+",
-    "cost": "Under $200",
-    "tech": "A/V",
-    "access": "Parking",
-    "setup": "Standard",
-    "contact": "Embassy Suites Albuquerque - (505) 245-7100"
   }
 ]

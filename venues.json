@@ -286,6 +286,16 @@
 
   {
     "city": "Silver City",
+    "type": "Library",
+    "size": "30+",
+    "cost": "Free",
+    "tech": "WiFi",
+    "access": "ADA",
+    "setup": "Easy",
+    "contact": "Silver City Public Library - (575) 538-3672"
+  },
+  {
+    "city": "Silver City",
     "type": "Community Center",
     "size": "40+",
     "cost": "Under $50",
@@ -293,5 +303,35 @@
     "access": "ADA",
     "setup": "Easy",
     "contact": "Silver City Recreation Center - (575) 388-3087"
+  },
+  {
+    "city": "Hurley",
+    "type": "Community Center",
+    "size": "50+",
+    "cost": "Under $50",
+    "tech": "WiFi",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Hurley Community Center - (575) 537-2326"
+  },
+  {
+    "city": "Bayard",
+    "type": "Community Center",
+    "size": "60+",
+    "cost": "Under $50",
+    "tech": "WiFi",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Bayard Community Center - (575) 537-3327"
+  },
+  {
+    "city": "Pinos Altos",
+    "type": "Community Center",
+    "size": "40+",
+    "cost": "Under $50",
+    "tech": "None",
+    "access": "Parking",
+    "setup": "Limited",
+    "contact": "Pinos Altos Community Hall - (575) 388-1509"
   }
 ]

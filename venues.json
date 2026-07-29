@@ -119,8 +119,7 @@
     "access": "Parking",
     "setup": "Standard",
     "contact": "Hilton Santa Fe Historic Plaza - (505) 988-2811"
-  },
-
+  }
   {
     "city": "Rio Rancho",
     "type": "Library",
@@ -232,7 +231,6 @@
     "setup": "Standard",
     "contact": "NMSU Corbett Center Student Union - (575) 646-4411"
   },
-
   {
     "city": "Taos",
     "type": "Library",
@@ -283,7 +281,6 @@
     "setup": "Easy",
     "contact": "Ranchos de Taos Library & Community Room - (575) 751-2600"
   },
-
   {
     "city": "Silver City",
     "type": "Library",
@@ -334,7 +331,6 @@
     "setup": "Limited",
     "contact": "Pinos Altos Community Hall - (575) 388-1509"
   },
-
   {
     "city": "Roswell",
     "type": "Library",
@@ -456,38 +452,7 @@
     "setup": "Standard",
     "contact": "Belen Community Center - (505) 966-2700"
   },
-
   {
-    "city": "Los Alamos",
-    "type": "Library",
-    "size": "40+",
-    "cost": "Free",
-    "tech": "WiFi",
-    "access": "ADA",
-    "setup": "Easy",
-    "contact": "Mesa Public Library - (505) 662-8240"
-  },
-  {
-    "city": "Los Alamos",
-    "type": "Library",
-    "size": "30+",
-    "cost": "Free",
-    "tech": "WiFi",
-    "access": "ADA",
-    "setup": "Easy",
-    "contact": "Los Alamos Public Library - (505) 662-8250"
-  },
-  {
-    "city": "Los Alamos",
-    "type": "Community Center",
-    "size": "50+",
-    "cost": "Under $100",
-    "tech": "WiFi",
-    "access": "Parking",
-    "setup": "Standard",
-    "contact": "Los Alamos Nature Center - (505) 662-0460"
-  },
-    {
     "city": "Los Alamos",
     "type": "Library",
     "size": "40+",
@@ -556,5 +521,15 @@
     "access": "Parking",
     "setup": "Standard",
     "contact": "White Rock Community Center - (505) 662-3100"
+  },
+  {
+    "city": "White Rock",
+    "type": "Event Space",
+    "size": "80+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "White Rock Event Hall - (505) 662-3101"
   }
-
+]

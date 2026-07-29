@@ -1,10 +1,9 @@
 /* GLOBAL PAGE STYLING */
 body {
-body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #eef5ff, #fffdf3);
+  background: #f4f6f8 url('https://www.transparenttextures.com/patterns/cubes.png');
   color: #222;
 }
 

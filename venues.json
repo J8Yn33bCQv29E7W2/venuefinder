@@ -235,6 +235,26 @@
 
   {
     "city": "Taos",
+    "type": "Library",
+    "size": "30+",
+    "cost": "Free",
+    "tech": "WiFi",
+    "access": "ADA",
+    "setup": "Easy",
+    "contact": "Taos Public Library - (575) 758-3063"
+  },
+  {
+    "city": "Taos",
+    "type": "Community Center",
+    "size": "60+",
+    "cost": "Under $100",
+    "tech": "WiFi",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Taos Youth & Family Center - (575) 758-4160"
+  },
+  {
+    "city": "Taos",
     "type": "Event Space",
     "size": "100+",
     "cost": "Under $200",
@@ -243,6 +263,27 @@
     "setup": "Limited",
     "contact": "Taos Center for the Arts - (575) 758-2052"
   },
+  {
+    "city": "El Prado",
+    "type": "Community Center",
+    "size": "50+",
+    "cost": "Under $100",
+    "tech": "WiFi",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "El Prado Community Center - (575) 758-5500"
+  },
+  {
+    "city": "Ranchos de Taos",
+    "type": "Library",
+    "size": "20+",
+    "cost": "Free",
+    "tech": "WiFi",
+    "access": "ADA",
+    "setup": "Easy",
+    "contact": "Ranchos de Taos Library & Community Room - (575) 751-2600"
+  },
+
   {
     "city": "Silver City",
     "type": "Community Center",

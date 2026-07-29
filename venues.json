@@ -122,6 +122,57 @@
   },
 
   {
+    "city": "Rio Rancho",
+    "type": "Library",
+    "size": "30+",
+    "cost": "Free",
+    "tech": "WiFi",
+    "access": "ADA",
+    "setup": "Easy",
+    "contact": "Loma Colorado Main Library - (505) 891-5013"
+  },
+  {
+    "city": "Rio Rancho",
+    "type": "Community Center",
+    "size": "60+",
+    "cost": "Under $100",
+    "tech": "WiFi",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Sabana Grande Recreation Center - (505) 891-6196"
+  },
+  {
+    "city": "Corrales",
+    "type": "Event Space",
+    "size": "80+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Old Church Corrales - (505) 897-8100"
+  },
+  {
+    "city": "Bernalillo",
+    "type": "Community Center",
+    "size": "50+",
+    "cost": "Under $100",
+    "tech": "WiFi",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Bernalillo Recreation Center - (505) 867-3311"
+  },
+  {
+    "city": "Rio Rancho",
+    "type": "Hotel Meeting Room",
+    "size": "100+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Hilton Garden Inn Rio Rancho - (505) 896-1111"
+  },
+
+  {
     "city": "Taos",
     "type": "Event Space",
     "size": "100+",

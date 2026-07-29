@@ -119,7 +119,8 @@
     "access": "Parking",
     "setup": "Standard",
     "contact": "Hilton Santa Fe Historic Plaza - (505) 988-2811"
-  }
+  },
+
   {
     "city": "Rio Rancho",
     "type": "Library",
@@ -231,6 +232,7 @@
     "setup": "Standard",
     "contact": "NMSU Corbett Center Student Union - (575) 646-4411"
   },
+
   {
     "city": "Taos",
     "type": "Library",
@@ -331,6 +333,7 @@
     "setup": "Limited",
     "contact": "Pinos Altos Community Hall - (575) 388-1509"
   },
+
   {
     "city": "Roswell",
     "type": "Library",
@@ -452,6 +455,7 @@
     "setup": "Standard",
     "contact": "Belen Community Center - (505) 966-2700"
   },
+
   {
     "city": "Los Alamos",
     "type": "Library",
@@ -502,6 +506,7 @@
     "setup": "Standard",
     "contact": "Hampton Inn & Suites Los Alamos - (505) 672-3838"
   },
+
   {
     "city": "White Rock",
     "type": "Library",

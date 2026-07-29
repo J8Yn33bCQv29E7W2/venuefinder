@@ -1,3 +1,4 @@
+/* GLOBAL PAGE STYLING */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,6 +7,7 @@ body {
   color: #222;
 }
 
+/* HEADER */
 header {
   background-color: #e0e0e0;
   text-align: center;
@@ -17,6 +19,7 @@ h1 {
   letter-spacing: 0.5px;
 }
 
+/* FILTER PANEL */
 .filter-panel {
   background-color: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(2px);
@@ -29,23 +32,13 @@ h1 {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-#output {
-  background-color: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(2px);
-  border-radius: 6px;
-  padding: 20px;
-  margin: 20px auto;
-  width: 90%;
-  max-width: 800px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-
-.filter-panel h2, .filter-panel h3 {
+.filter-panel h2,
+.filter-panel h3 {
   text-align: center;
   font-weight: normal;
 }
 
+/* FORM ELEMENTS */
 label {
   display: block;
   margin-top: 10px;
@@ -60,6 +53,7 @@ select {
   border-radius: 4px;
 }
 
+/* BUTTON */
 button {
   display: block;
   width: 100%;
@@ -77,23 +71,27 @@ button:hover {
   background-color: #005a9e;
 }
 
+/* RESULTS OUTPUT PANEL */
 #output {
   margin: 20px auto;
   width: 90%;
   max-width: 800px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(2px);
   border-radius: 6px;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+/* RESULTS TABLE */
 .results-table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
 }
 
-.results-table th, .results-table td {
+.results-table th,
+.results-table td {
   border: 1px solid #ccc;
   padding: 8px;
   text-align: left;

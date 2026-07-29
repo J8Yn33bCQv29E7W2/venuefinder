@@ -69,6 +69,27 @@
     "setup": "Standard",
     "contact": "Marriott Pyramid North - (505) 821-3333"
   },
+
+  {
+    "city": "Santa Fe",
+    "type": "Library",
+    "size": "40+",
+    "cost": "Free",
+    "tech": "WiFi",
+    "access": "ADA",
+    "setup": "Easy",
+    "contact": "Santa Fe Public Library Main Branch - (505) 955-6780"
+  },
+  {
+    "city": "Santa Fe",
+    "type": "Library",
+    "size": "30+",
+    "cost": "Free",
+    "tech": "WiFi",
+    "access": "ADA",
+    "setup": "Easy",
+    "contact": "La Farge Library - (505) 955-7165"
+  },
   {
     "city": "Santa Fe",
     "type": "Community Center",
@@ -77,8 +98,29 @@
     "tech": "Projector",
     "access": "Parking",
     "setup": "Standard",
-    "contact": "Genoveva Chavez Center - (505) 955-4000"
+    "contact": "Genoveva Chavez Community Center - (505) 955-4000"
   },
+  {
+    "city": "Santa Fe",
+    "type": "Event Space",
+    "size": "100+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Santa Fe Community Convention Center - (505) 955-6590"
+  },
+  {
+    "city": "Santa Fe",
+    "type": "Hotel Meeting Room",
+    "size": "80+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Hilton Santa Fe Historic Plaza - (505) 988-2811"
+  },
+
   {
     "city": "Taos",
     "type": "Event Space",

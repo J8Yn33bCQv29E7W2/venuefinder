@@ -11,7 +11,7 @@ async function loadVenues() {
   }
 }
 
-// Filter venues based on selections
+// Filter venues based on selections (looser matching)
 function filterVenues(data) {
   const city = document.getElementById('city').value;
   const type = document.getElementById('type').value;
@@ -24,14 +24,26 @@ function filterVenues(data) {
   return data.filter(v => {
     if (city && (!v.city || !v.city.includes(city))) return false;
     if (type && v.type !== type) return false;
-    if (size && v.size !== size) return false;
-    if (cost && v.cost !== cost) return false;
-    if (tech && v.tech !== tech) return false;
-    if (access && v.access !== access) return false;
-    if (setup && v.setup !== setup) return false;
+
+    // Loosen size matching: "40+" matches "50+", "60+", etc.
+    if (size && v.size && !v.size.includes(size.replace('+', ''))) return false;
+
+    // Loosen cost matching: "Under $100" matches "Under $200"
+    if (cost && v.cost && !v.cost.includes(cost.replace('Under ', ''))) return false;
+
+    // Loosen tech matching: "WiFi" matches "WiFi", "WiFi + A/V", etc.
+    if (tech && v.tech && !v.tech.includes(tech)) return false;
+
+    // Loosen access matching: "ADA" matches "ADA", "ADA + Parking"
+    if (access && v.access && !v.access.includes(access)) return false;
+
+    // Loosen setup matching: "Easy" matches "Easy", "Standard", etc.
+    if (setup && v.setup && !v.setup.includes(setup)) return false;
+
     return true;
   });
 }
+
 
 let currentIndex = 0;
 let currentResults = [];

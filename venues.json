@@ -21,6 +21,67 @@
   },
   {
     "city": "Albuquerque",
+    "type": "Library",
+    "size": "50+",
+    "cost": "Free",
+    "tech": "WiFi",
+    "access": "ADA",
+    "setup": "Easy",
+    "contact": "Juan Tabo Library - (505) 291-6260"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Library",
+    "size": "40+",
+    "cost": "Free",
+    "tech": "WiFi",
+    "access": "ADA",
+    "setup": "Easy",
+    "contact": "Cherry Hills Library - (505) 857-8321"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Library",
+    "size": "60+",
+    "cost": "Free",
+    "tech": "WiFi",
+    "access": "ADA",
+    "setup": "Easy",
+    "contact": "Taylor Ranch Library - (505) 897-8816"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Library",
+    "size": "30+",
+    "cost": "Free",
+    "tech": "WiFi",
+    "access": "ADA",
+    "setup": "Easy",
+    "contact": "Westgate Library - (505) 833-6984"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Library",
+    "size": "50+",
+    "cost": "Free",
+    "tech": "WiFi",
+    "access": "ADA",
+    "setup": "Easy",
+    "contact": "South Valley Library - (505) 877-5170"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Library",
+    "size": "40+",
+    "cost": "Free",
+    "tech": "WiFi",
+    "access": "ADA",
+    "setup": "Easy",
+    "contact": "International District Library - (505) 256-2000"
+  },
+
+  {
+    "city": "Albuquerque",
     "type": "Community Center",
     "size": "80+",
     "cost": "Under $100",
@@ -41,6 +102,67 @@
   },
   {
     "city": "Albuquerque",
+    "type": "Community Center",
+    "size": "70+",
+    "cost": "Under $100",
+    "tech": "WiFi",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Los Griegos Community Center - (505) 761-4050"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Community Center",
+    "size": "50+",
+    "cost": "Under $100",
+    "tech": "WiFi",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Barelas Community Center - (505) 764-6436"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Community Center",
+    "size": "90+",
+    "cost": "Under $100",
+    "tech": "WiFi",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Westside Community Center - (505) 768-4950"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Community Center",
+    "size": "60+",
+    "cost": "Under $100",
+    "tech": "WiFi",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Wells Park Community Center - (505) 848-1390"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Community Center",
+    "size": "80+",
+    "cost": "Under $100",
+    "tech": "WiFi",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Alamosa Community Center - (505) 836-8760"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Community Center",
+    "size": "70+",
+    "cost": "Under $100",
+    "tech": "WiFi",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "North Valley Senior Center - (505) 761-4025"
+  },
+
+  {
+    "city": "Albuquerque",
     "type": "Event Space",
     "size": "100+",
     "cost": "Under $200",
@@ -49,6 +171,77 @@
     "setup": "Standard",
     "contact": "National Hispanic Cultural Center - (505) 246-2261"
   },
+  {
+    "city": "Albuquerque",
+    "type": "Event Space",
+    "size": "120+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "African American Performing Arts Center - (505) 222-0770"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Event Space",
+    "size": "150+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "South Broadway Cultural Center - (505) 848-1320"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Event Space",
+    "size": "80+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Indian Pueblo Cultural Center - (505) 843-7270"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Event Space",
+    "size": "200+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "UNM Continuing Education Conference Center - (505) 277-0077"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Event Space",
+    "size": "120+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Explora Event Space - (505) 224-8300"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Event Space",
+    "size": "90+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Balloon Museum Event Hall - (505) 768-6020"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Event Space",
+    "size": "140+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Albuquerque Museum Auditorium - (505) 243-7255"
+  },
+
   {
     "city": "Albuquerque",
     "type": "Hotel Meeting Room",
@@ -69,6 +262,67 @@
     "setup": "Standard",
     "contact": "Marriott Pyramid North - (505) 821-3333"
   },
+  {
+    "city": "Albuquerque",
+    "type": "Hotel Meeting Room",
+    "size": "100+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Sheraton Albuquerque Uptown - (505) 881-0000"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Hotel Meeting Room",
+    "size": "90+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Hilton Garden Inn Albuquerque Uptown - (505) 944-0300"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Hotel Meeting Room",
+    "size": "110+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Holiday Inn Express Midtown - (505) 881-0544"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Hotel Meeting Room",
+    "size": "130+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "DoubleTree by Hilton Downtown - (505) 247-3344"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Hotel Meeting Room",
+    "size": "70+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Homewood Suites by Hilton Journal Center - (505) 998-0100"
+  },
+  {
+    "city": "Albuquerque",
+    "type": "Hotel Meeting Room",
+    "size": "150+",
+    "cost": "Under $200",
+    "tech": "A/V",
+    "access": "Parking",
+    "setup": "Standard",
+    "contact": "Courtyard by Marriott Albuquerque - (505) 881-6800"
+  }
+]
 
   {
     "city": "Santa Fe",

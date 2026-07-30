@@ -89,39 +89,34 @@ function generateTable(results, startIndex = 0) {
   });
 
   // Disclaimer
-  const disclaimer = document.createElement('p');
-  disclaimer.textContent = 'Results are for volunteer planning purposes only. Verify details before scheduling.';
+const disclaimer = document.createElement('p');
+disclaimer.textContent =
+  'Results are for volunteer planning purposes only. Verify details before scheduling.';
 
-  // Next Five button
+// Pagination Controls
+if (results.length > startIndex + 5) {
   const nextButton = document.createElement('button');
-  nextButton.textContent = 'Next Five';
-  nextButton.style.marginTop = '15px';
-  nextButton.addEventListener('click', () => {
-    currentIndex += 5;
-    if (currentIndex < currentResults.length) {
-      generateTable(currentResults, currentIndex);
-    } else {
-      const endMsg = document.createElement('p');
-      endMsg.textContent = 'End of results.';
-      output.appendChild(endMsg);
-      nextButton.remove(); // Hide button when results end
-    }
-  });
-
-  // Append elements
-  output.appendChild(title);
-  output.appendChild(timestamp);
-  output.appendChild(table);
-  output.appendChild(disclaimer);
-  if (results.length > startIndex + 5) {
-    output.appendChild(nextButton);
-  }
+  nextButton.textContent = 'Show next five';
+  nextButton.style.marginTop = '10px';
+  nextButton.onclick = () => {
+    generateTable(results, startIndex + 5);
+  };
+  output.appendChild(nextButton);
 }
 
-// Main click handler
-document.getElementById('generate').addEventListener('click', async () => {
-  const data = await loadVenues();
-  currentResults = filterVenues(data);
-  currentIndex = 0;
-  generateTable(currentResults, currentIndex);
-});
+if (startIndex >= 5) {
+  const prevButton = document.createElement('button');
+  prevButton.textContent = 'Show previous five';
+  prevButton.style.marginTop = '10px';
+  prevButton.onclick = () => {
+    generateTable(results, startIndex - 5);
+  };
+  output.appendChild(prevButton);
+}
+
+// Append elements
+output.appendChild(title);
+output.appendChild(timestamp);
+output.appendChild(table);
+output.appendChild(disclaimer);
+}

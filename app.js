@@ -1,8 +1,14 @@
-// Load venue data
+// Load venue data with error handling
 async function loadVenues() {
-  const response = await fetch('venues.json');
-  const data = await response.json();
-  return data;
+  try {
+    const response = await fetch('venues.json');
+    if (!response.ok) throw new Error('Network response was not ok');
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error loading venues:', error);
+    return [];
+  }
 }
 
 // Filter venues based on selections
@@ -16,7 +22,7 @@ function filterVenues(data) {
   const setup = document.getElementById('setup').value;
 
   return data.filter(v => {
-    if (city && !v.city.includes(city)) return false;
+    if (city && (!v.city || !v.city.includes(city))) return false;
     if (type && v.type !== type) return false;
     if (size && v.size !== size) return false;
     if (cost && v.cost !== cost) return false;
@@ -27,71 +33,22 @@ function filterVenues(data) {
   });
 }
 
-// Generate output table
-function generateTable(results) {
-  const output = document.getElementById('output');
-  output.innerHTML = '';
-
-  if (results.length === 0) {
-    output.innerHTML = '<p>No venues found. Try adjusting filters.</p>';
-    return;
-  }
-
-  // Title and timestamp
-  const title = document.createElement('h2');
-  title.textContent = 'Venue Finder Results';
-  const timestamp = document.createElement('p');
-  const now = new Date();
-  timestamp.textContent = `Generated ${now.toLocaleString('en-US', { timeZone: 'America/Denver' })} (MST)`;
-
-  // Table
-  const table = document.createElement('table');
-  table.classList.add('results-table');
-  table.innerHTML = `
-    <tr>
-      <th>Cost</th>
-      <th>Size</th>
-      <th>Tech</th>
-      <th>Access</th>
-      <th>Type</th>
-      <th>Setup</th>
-      <th>Contact</th>
-    </tr>
-  `;
-
-  results.slice(0, 5).forEach(v => {
-    const row = document.createElement('tr');
-    row.innerHTML = `
-      <td>${v.cost || 'Not listed'}</td>
-      <td>${v.size || 'Not listed'}</td>
-      <td>${v.tech || 'Not listed'}</td>
-      <td>${v.access || 'Not listed'}</td>
-      <td>${v.type || 'Not listed'}</td>
-      <td>${v.setup || 'Not listed'}</td>
-      <td>${v.contact || 'Not listed'}</td>
-    `;
-    table.appendChild(row);
-  });
-
-  // Disclaimer
-  const disclaimer = document.createElement('p');
-  disclaimer.textContent = 'Results are for volunteer planning purposes only. Verify details before scheduling.';
-
-  // Append everything
-  output.appendChild(title);
-  output.appendChild(timestamp);
-  output.appendChild(table);
-  output.appendChild(disclaimer);
-}
-
 let currentIndex = 0;
 let currentResults = [];
 
+// Helper function to safely create text cells (Prevents XSS / Injection)
+function createCell(text) {
+  const td = document.createElement('td');
+  td.textContent = text || 'Not listed';
+  return td;
+}
+
+// Generate output table safely
 function generateTable(results, startIndex = 0) {
   const output = document.getElementById('output');
   output.innerHTML = '';
 
-  if (results.length === 0) {
+  if (!results || results.length === 0) {
     output.innerHTML = '<p>No venues found. Try adjusting filters.</p>';
     return;
   }
@@ -99,6 +56,7 @@ function generateTable(results, startIndex = 0) {
   // Title and timestamp
   const title = document.createElement('h2');
   title.textContent = 'Venue Finder Results';
+  
   const timestamp = document.createElement('p');
   const now = new Date();
   timestamp.textContent = `Generated ${now.toLocaleString('en-US', { timeZone: 'America/Denver' })} (MST)`;
@@ -106,30 +64,27 @@ function generateTable(results, startIndex = 0) {
   // Table
   const table = document.createElement('table');
   table.classList.add('results-table');
-  table.innerHTML = `
-    <tr>
-      <th>Cost</th>
-      <th>Size</th>
-      <th>Tech</th>
-      <th>Access</th>
-      <th>Type</th>
-      <th>Setup</th>
-      <th>Contact</th>
-    </tr>
-  `;
+  
+  // Table Header
+  const headerRow = document.createElement('tr');
+  ['Cost', 'Size', 'Tech', 'Access', 'Type', 'Setup', 'Contact'].forEach(headerText => {
+    const th = document.createElement('th');
+    th.textContent = headerText;
+    headerRow.appendChild(th);
+  });
+  table.appendChild(headerRow);
 
+  // Table Data Rows (Safely constructed)
   const slice = results.slice(startIndex, startIndex + 5);
   slice.forEach(v => {
     const row = document.createElement('tr');
-    row.innerHTML = `
-      <td>${v.cost || 'Not listed'}</td>
-      <td>${v.size || 'Not listed'}</td>
-      <td>${v.tech || 'Not listed'}</td>
-      <td>${v.access || 'Not listed'}</td>
-      <td>${v.type || 'Not listed'}</td>
-      <td>${v.setup || 'Not listed'}</td>
-      <td>${v.contact || 'Not listed'}</td>
-    `;
+    row.appendChild(createCell(v.cost));
+    row.appendChild(createCell(v.size));
+    row.appendChild(createCell(v.tech));
+    row.appendChild(createCell(v.access));
+    row.appendChild(createCell(v.type));
+    row.appendChild(createCell(v.setup));
+    row.appendChild(createCell(v.contact));
     table.appendChild(row);
   });
 
@@ -146,16 +101,21 @@ function generateTable(results, startIndex = 0) {
     if (currentIndex < currentResults.length) {
       generateTable(currentResults, currentIndex);
     } else {
-      output.innerHTML = '<p>End of results.</p>';
+      const endMsg = document.createElement('p');
+      endMsg.textContent = 'End of results.';
+      output.appendChild(endMsg);
+      nextButton.remove(); // Hide button when results end
     }
   });
 
-  // Append everything
+  // Append elements
   output.appendChild(title);
   output.appendChild(timestamp);
   output.appendChild(table);
   output.appendChild(disclaimer);
-  if (results.length > 5) output.appendChild(nextButton);
+  if (results.length > startIndex + 5) {
+    output.appendChild(nextButton);
+  }
 }
 
 // Main click handler
@@ -165,5 +125,3 @@ document.getElementById('generate').addEventListener('click', async () => {
   currentIndex = 0;
   generateTable(currentResults, currentIndex);
 });
-
-

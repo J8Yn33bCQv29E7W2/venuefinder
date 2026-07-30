@@ -119,4 +119,12 @@ output.appendChild(title);
 output.appendChild(timestamp);
 output.appendChild(table);
 output.appendChild(disclaimer);
+
+// Optional: show total results count for debugging
+const countMsg = document.createElement('p');
+countMsg.textContent = `Total venues found: ${results.length}`;
+countMsg.style.fontSize = '0.9em';
+countMsg.style.color = '#555';
+output.appendChild(countMsg);
 }
+

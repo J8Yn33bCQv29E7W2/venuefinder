@@ -21,15 +21,15 @@ function filterVenues(data) {
   const access = document.getElementById('access').value;
   const setup = document.getElementById('setup').value;
 
- return data.filter(v => {
-  if (city && (!v.city || !v.city.includes(city))) return false;
-  if (type && v.type && !v.type.includes(type)) return false;
-  if (size && v.size && !v.size.includes(size.replace('+', ''))) return false;
-  if (cost && v.cost && !v.cost.includes(cost.replace('Under ', ''))) return false;
-  if (tech && v.tech && !v.tech.includes(tech)) return false;
-  if (access && v.access && !v.access.includes(access)) return false;
-  if (setup && v.setup && !v.setup.includes(setup)) return false;
-  return true;
+  return data.filter(v => {
+    if (city && (!v.city || !v.city.includes(city))) return false;
+    if (type && v.type && !v.type.includes(type)) return false;
+    if (size && v.size && !v.size.includes(size.replace('+', ''))) return false;
+    if (cost && v.cost && !v.cost.includes(cost)) return false; // simplified cost filter
+    if (tech && v.tech && !v.tech.includes(tech)) return false;
+    if (access && v.access && !v.access.includes(access)) return false;
+    if (setup && v.setup && !v.setup.includes(setup)) return false;
+    return true;
   });
 }
 
@@ -53,18 +53,17 @@ function generateTable(results, startIndex = 0) {
     return;
   }
 
-  // Title and timestamp
+  // Title and static update notice
   const title = document.createElement('h2');
   title.textContent = 'Venue Finder Results';
-  
-  const timestamp = document.createElement('p');
-  const now = new Date();
-  timestamp.textContent = `Generated ${now.toLocaleString('en-US', { timeZone: 'America/Denver' })} (MST)`;
+
+  const updateNotice = document.createElement('p');
+  updateNotice.textContent = 'Data last updated: July 2026';
 
   // Table
   const table = document.createElement('table');
   table.classList.add('results-table');
-  
+
   // Table Header
   const headerRow = document.createElement('tr');
   ['Cost', 'Size', 'Tech', 'Access', 'Type', 'Setup', 'Contact'].forEach(headerText => {
@@ -110,7 +109,7 @@ function generateTable(results, startIndex = 0) {
 
   // Append elements
   output.appendChild(title);
-  output.appendChild(timestamp);
+  output.appendChild(updateNotice);
   output.appendChild(table);
   output.appendChild(disclaimer);
   if (results.length > startIndex + 5) {

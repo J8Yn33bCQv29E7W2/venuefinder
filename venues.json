@@ -498,8 +498,12 @@
     "contact": "Fuller Lodge - (505) 662-8333"
   },
   {
-    "city": "Los Alamos",
-    "type": "Hotel Meeting Room",
-    "size": "80+",
-    "cost": "Over $200",
-    "tech": "A/V",
+  "city": "Los Alamos",
+  "type": "Hotel Meeting Room",
+  "size": "80+",
+  "cost": "Over $200",
+  "tech": "A/V",
+  "access": "Parking",
+  "setup": "Standard",
+  "contact": "Hampton Inn & Suites Los Alamos - (505) 672-3838"
+}

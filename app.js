@@ -21,15 +21,16 @@ function filterVenues(data) {
   const access = document.getElementById('access').value;
   const setup = document.getElementById('setup').value;
 
-  return data.filter(v => {
-    if (city && (!v.city || !v.city.includes(city))) return false;
-    if (type && v.type !== type) return false;
-    if (size && v.size !== size) return false;
-    if (cost && v.cost !== cost) return false;
-    if (tech && v.tech !== tech) return false;
-    if (access && v.access !== access) return false;
-    if (setup && v.setup !== setup) return false;
-    return true;
+ return data.filter(v => {
+  if (city && (!v.city || !v.city.includes(city))) return false;
+  if (type && v.type && !v.type.includes(type)) return false;
+  if (size && v.size && !v.size.includes(size.replace('+', ''))) return false;
+  if (cost && v.cost && !v.cost.includes(cost.replace('Under ', ''))) return false;
+  if (tech && v.tech && !v.tech.includes(tech)) return false;
+  if (access && v.access && !v.access.includes(access)) return false;
+  if (setup && v.setup && !v.setup.includes(setup)) return false;
+  return true;
+});
   });
 }
 

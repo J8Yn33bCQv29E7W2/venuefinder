@@ -30,7 +30,6 @@ function filterVenues(data) {
   if (access && v.access && !v.access.includes(access)) return false;
   if (setup && v.setup && !v.setup.includes(setup)) return false;
   return true;
-});
   });
 }
 
